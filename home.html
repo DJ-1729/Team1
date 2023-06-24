@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doughy Delights - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    body {
+  font-family: Bradley Hand ITC;
+  font-weight:bold;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #feb8b8d0;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav{
+  text-align:right;
+  font-size: 20px;
+}
+
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+#slideshow {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.slide {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: fade 1.5s ease-in-out infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#specials {
+  background-color: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.special-item {
+  display: inline-block;
+  margin: 20px;
+}
+
+.special-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.special-item h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.special-item p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+footer {
+  background-color:#feb8b8d0 ;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info h3,
+.legal-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.legal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legal-info li {
+    margin-bottom: 5px;
+}
+
+.legal-info a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
+}
+
+.item{
+  border-style:none;
+  height:500px;
+  width:60px;
+  margin-left: 10px;
+  margin-right:10px;
+  padding:5px;
+  padding-top: 10px;
+  
+}
+
+    .new-arrivals {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      background-color: #f8f8f8;
+
+    }
+
+    .new-arrivals .item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 33.33%;
+    }
+
+    .new-arrivals .item img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .new-arrivals .item p {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .new-arrivals .item:first-child,
+    .new-arrivals .item:last-child {
+      text-align: left;
+    }
+
+    .new-arrivals .item:nth-child(2) {
+      text-align: right;
+    }
+
+    .social-icons {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icons i {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+</style></head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="prog.html">Signin</a></li>
+        <li><a href="feed.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="slideshow">
+    <div class="slide">
+      <img src="cake.jpg" alt="Slide 1">
+      
+    </div>
+    <div class="slide">
+      <img src="https://a-static.besthdwallpaper.com/a-bowl-of-colorful-french-macarons-wallpaper-2560x1600-60480_7.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="https://media.istockphoto.com/id/534053642/photo/donuts-in-multicolored-glaze-close-up.jpg?s=612x612&w=0&k=20&c=PgLfztaXlKX1B8BP5Hb3uPOmQSQ6lIASiPGiecWlSYw=" alt="Slide 3">
+    </div>
+    <div class="slide">
+      <img src="https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg" alt="Slide 4">
+    </div>
+    <div class="slide">
+      <img src="https://t4.ftcdn.net/jpg/05/91/04/03/360_F_591040363_mfwywTePvtSaxn1MdwddfBbzjC5DO3aR.jpg" alt="Slide 5">
+    </div>
+    <div class="slide">
+      <img src="https://www.tasteatlas.com/images/dishes/5291b5f2fcee42849cd84a03bff55e0a.jpg" alt="Slide 6">
+    </div>
+  </section>
+
+  <section id="specials"><br>
+    <h2>Our Best Sellers</h2>
+    <div class="special-item">
+      <img src="https://cakexpo-images.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/12/14050921/IMG_20211117_202057_144.jpg" alt="Special 1" usemap="#spec1">
+      <map name="spec1">
+        <area shape="default" href="menu.html">
+
+      </map>
+      <h3>Chocolate Cake</h3>
+    </div>
+    <div class="special-item">
+      <img src="https://www.spatuladesserts.com/wp-content/uploads/2021/04/Pistachio-macaron-4055704.jpg" alt="Special 2" usemap="#spec2">
+      <map name="spec2">
+        <area shape="default" href="menu.html">
+
+      </map>
+      <h3>Pista Macaroons</h3>
+    </div>
+    <div class="special-item">
+      <img src="https://globalassets.starbucks.com/assets/e0cd6e8588b6431d9d6f702bde6ee41c.jpg?impolicy=1by1_tight_288" alt="Special 3" usemap="#spec3">
+      <map name="spec3">
+        <area shape="default" href="menu.html">
+
+      </map>
+      <h3>Pink Coconut Drink</h3>
+    </div>
+  </section>
+ 
+<div style="  background-color: #f8f8f8;"><br>
+    <h2>
+        
+      <center>Check out our New Arrivals</center></h2>
+      <section class="new-arrivals">
+
+    <div class="item">
+      <img src="https://assets.limetray.com/assets/user_images/menus/compressed/1675853253_Zomato1080x1080ClassicCaramelDonut.jpg" alt="Cake 1" usemap="#new1">
+      <map name="new1">
+        <area shape="default" href="menu.html">
+        
+      </map>
+      <p>Classic Caramel Donuts</p>
+    <p>
+        Classic Caramel Donuts are irresistible treats that bring together the rich flavors of caramel and the delightful texture of coconut. These bite-sized macaroons are a perfect balance of sweetness and chewiness, making them a favorite among dessert lovers.
+
+Each macaroon is crafted with care, featuring a golden-brown exterior that is toasted to perfection, while the interior remains soft and moist.
+    </p>    </div>
+    <br>
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rVdPDDEDNkCyNyd5RLWlpPEp2WEhT4a9mA&usqp=CAU" alt="Cake 2" usemap="#new2">
+      <map name="new2">
+        <area shape="default" href="menu.html">
+        
+      </map>
+      <p> Refreshing Iced Tea</p>
+    <p>
+        Iced tea is a refreshing and thirst-quenching beverage that offers a cool and invigorating experience, especially on hot summer days. It is a popular choice for those seeking a flavorful and revitalizing alternative to hot beverages.
+    </p>
+    </div><br>
+    <div class="item">
+      <img src="lemon.jpeg" alt="Cake 3" usemap="#new3">
+      <map name="new3">
+        <area shape="default" href="menu.html">
+        
+      </map>
+      <p>Lemon Blueberry Cake</p>
+    <p>
+        The Lemon Blueberry Cake is a delightful combination of zesty lemon flavor and the natural sweetness of fresh blueberries. This cake is a burst of citrusy and fruity goodness that is sure to please your taste buds.
+
+        The moist and fluffy lemon-infused cake layers are complemented by a luscious blueberry filling, adding a burst of juicy sweetness to every bite.
+    </p>    </div>
+    <br>
+  </section>
+</div>
+    <footer>
+     
+              <div class="footer-container">
+                <div class="contact-info">
+                  <h3>Contact Information</h3>
+                  <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/your_instagram">Instagram</a></p>
+                  <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/your_facebook">Facebook</a></p>
+                  <p><i class="far fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+                  <p><i class="fas fa-phone"></i> Phone: +1234567890</p>
+                </div>
+                <div class="legal-info">
+                  <h3>Legal Information</h3>
+                  <ul>
+                    
+                      <li><a href="terms.html">Terms and Conditions</a></li>
+                  
+                  </ul>
+                </div>
+              </div>
+          
+  
+    <p>&copy; 2023 Doughy Delights. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll("#slideshow .slide");
+let slideIndex = 0;
+
+function showSlide() {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlide, 1500); 
+}
+
+showSlide();
+
+
+  </script>
+</body>
+</html>

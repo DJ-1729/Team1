@@ -1,0 +1,766 @@
+<html>
+<head>
+    <title>Doughy Delights</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="menu.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/92d70a2fd8.js" cross origin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+    body{
+    background-color:rgb(226, 243, 247);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin-top: 0;
+         font-family: Bradley Hand ITC;
+         font-weight: bold;
+         font-size:20px;
+         margin:0px;
+    
+   
+}
+#myButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#myButton:hover {
+  background-color: #45a049;
+}
+
+
+
+.nav {
+  padding: 0;
+  width: 24%;
+  height: 100%;
+  margin-top: 80px;
+  position: fixed;
+  
+}
+.menu{
+  height: 30px;
+  background-color: rgb(212, 225, 229);
+  border-bottom: black;
+  padding: 15px;
+  padding-left: 40px;
+  padding-top: 20px;
+
+}
+.ul1 {
+  list-style-type: none;
+  float: right;
+  padding: 0;
+  width: 260px;
+  background-color: white;
+;
+  margin-top: 10px;
+  margin-right: 5px;
+  vertical-align: middle;
+    text-align: left middle;
+    height: 100%;
+
+  
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-align: left middle;
+  text-decoration: none;
+  padding: 10px;
+ 
+}
+
+
+
+.middle{
+  margin-top: 62px;
+  margin-left:27%;
+  padding:1px 16px;
+  height:1000px;
+  position: static ;
+  float: left;
+  width:40% ;
+}
+.title{
+  font-size: 20px;
+  font-weight: bold;
+}
+.search{
+  background-color: white;
+  
+}
+.cartcost{
+  float: right;
+ padding-top: 2px;
+}
+  .cart {
+  padding: 0;
+  width: 360px;
+  background-color: #f1f1f1;
+  height: 100%;
+  position: fixed;
+  margin-left: 70%;
+  margin-top: 80px;
+  background-color: rgba(255,255,255,0.5);
+}
+.carthead{
+  background-color:rgb(212, 225, 229);
+  height: 50px;
+  width: 345px;
+  text-align: left;
+  margin: 0%;
+padding-top: 15px;
+padding-left: 15px;
+position: fixed;
+
+
+}
+.quantity{
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+.cartbottom{
+  background-color:#feb8b8d0;
+  height: 70px;
+  width: 320px;
+  margin-left:20px;
+  border-color:rgb(245, 236, 197); ;
+  border-radius: 10px;
+  color:black;
+  font-weight:bolder;
+  font-size: 20px;
+  margin-bottom: 0px;
+  position: fixed;
+  border-style:solid;
+  font-family:Bradley Hand ITC;
+
+
+}
+.cartmiddle{
+    margin-top: 80px;
+    position: static;
+
+}
+  
+
+div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  width: 270px;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+div.desc {
+  padding: 5px;
+  background-color: white;
+  height: 70px;
+  
+}
+.title{
+    font-size: 15px;
+    font-weight: 5px;
+    margin-top: 0px;
+    float: left;
+}
+
+button{
+    background-color: rgb(245, 206, 206); 
+    border: rgb(202, 200, 200);
+    padding: 10px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 30px;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  border: none;
+  font-size: 17px;
+  width: 600px;
+  height: 40px;
+}
+
+
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+
+    h1 {
+  text-align: center;
+}
+
+#items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+button.add-to-cart {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+#cart {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#total-price {
+  font-weight: bold;
+}
+
+.ul1,
+.li1{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+    text-align:right;
+  }
+  header {
+    background-color: #feb8b8d0;
+    position: fixed;
+    width:100%;
+    height:80px;
+  }
+
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  
+  nav ul li  {
+    text-decoration: none;
+    color: #333;
+    padding-top:10px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-bottom:10px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.ititle{
+  font-size: 20px;
+  font-weight: 5px;
+
+}
+
+
+
+.wrapper{
+  height: 40px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  float: right;
+}
+.wrapper span{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+.wrapper span.num{
+  font-size: 15px;
+  border-right: 2px solid rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other rgba(37,37,37,0.5)*/
+@media screen and (max-width: 600px) {
+.column.side, .column.middle {
+width: 100%;
+}
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+    
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+ 
+    <header>
+      <nav>
+        <ul>
+          <li ><a href="home.html">Home</a></li>
+          <li ><a href="menu.html">Menu</a></li>
+          <li><a href="about1.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="prog.html">Signin</a></li>
+          <li><a href="feed.html">Feedback</a></li>
+        </ul>
+      </nav>
+      </header>
+  
+
+  
+  <div class="nav">
+    <ul class="ul1">
+      <li class="menu" ><i class="fa fa-cutlery" style="font-stretch:10px; color: #555;"></i>&nbsp;&nbsp;&nbsp;Menu Categories</li>
+      <li class="li1"><a href="#Macaroons">Macaroons</a></li>
+      <li class="li1"><a href="#Donuts">Donuts</a></li>
+      <li class="li1"><a href="#Cakes">Cakes</a></li>
+      <li class="li1"><a href="#Hot_Beverages">Hot Beverages</a></li>
+      <li class="li1"><a href="#Cold_Beverage">Cold Beverages</a></li>
+    </ul>
+  </div>
+  <div class="cart">
+    <div class="carthead"><i class="fa fa-shopping-cart" style="font-size:20px"></i>&nbsp;&nbsp;
+     <span style="font-size: 18px;">Cart&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Quantity&nbsp;=&nbsp;</span><div class="quantity" id="count">0</div>
+    </div >
+    <div id="cartitem" class="cartmiddle">Your cart is empty</div>
+    <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">Rs. 0.00</h2>
+        <br>
+    </div>
+    
+
+      <a href="tq.html"><button class="cartbottom">Proceed to pay</button></a></div>
+
+
+  
+  <div class="middle">
+   
+    <div  id="root"></div>
+  </div>
+
+    
+  <script >
+    
+  const product = [
+    {
+        id: 0,
+        image: 'https://www.simplyrecipes.com/thmb/u8qvNVK47o0-1HaMwGngoNneelo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Chocolate-Macarons-Lead-3-07d3c26364604ddbb3fd3a40b6435a50.jpg',
+        title: 'Chocolate',
+        price: 299, 
+    },
+    {
+        id: 2,
+        image: 'https://veenaazmanov.com/wp-content/uploads/2014/10/Strawberry-Macarons-French-Macarons7.jpg',
+        title: 'Strawberry',
+        price: 299,
+    },
+    {
+        id: 3,
+        image: 'https://veenaazmanov.com/wp-content/uploads/2015/02/Lemon-Macarons-French-Macarons3.jpg',
+        title: 'Lemon',
+        price: 299,
+    },
+    {
+        id: 4,
+        image: 'https://www.piesandtacos.com/wp-content/uploads/2018/09/raspberry-macarons-13.jpg',
+        title: 'Raspberry',
+        price: 299,
+    },
+    {
+        id: 5,
+        image: 'https://chelsweets.com/wp-content/uploads/2013/09/finished-salted-caramel-macarons-horiz-lower-angle.jpg',
+        title: 'Salted',
+        price: 299,
+
+    },
+    {
+        id: 6,
+        image: 'https://www.spatuladesserts.com/wp-content/uploads/2021/04/Pistachio-macaron-4055704.jpg',
+        title: 'Pistachio',
+        price: 250,
+    },
+    {
+        id: 7,
+        image: 'https://letthebakingbegin.com/wp-content/uploads/2018/12/Coffee-Macarons-creamy-white-chocolate-ganache-flavored-with-strong-coffee-is-the-perfect-macaron-filling-for-these-delicate-italian-macarons.-macarons-individualdessert-italiandessert-2-2.jpg',
+        title: 'Coffee',
+        price: 245,
+
+    },
+    {
+        id: 8,
+        image: 'https://simplyhomecooked.com/wp-content/uploads/2021/08/Vanilla-macarons-30.jpg',
+        title: 'Vanilla',
+        price: 260,
+    },
+    {
+        id: 9,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853141_Zomato1080x1080ChocoMandarinDonut.jpg',
+        title: 'Choco Mandarine',
+        price: 259,
+    },
+    {
+        id: 10,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675854898_unhideCookieCartWheel.jpg',
+        title: 'Cookie Cart Wheel',
+        price: 129,
+    },
+    {
+        id: 11,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853160_Zomato1080x1080BlackForestttDonut.jpg',
+        title: 'Black Forest',
+        price: 129,
+    },
+    {
+        id: 12,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853183_Zomato1080x1080RedVelvetDonut.jpg',
+        title: 'Red Velvet',
+        price: 129,
+    },
+    {
+        id: 13,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853222_Zomato1080x1080RedButterscothCrumble.jpg',
+        title: 'ButterScotch Crumble',
+        price: 129,
+    },
+    {
+        id: 14,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853253_Zomato1080x1080ClassicCaramelDonut.jpg',
+        title: 'Classic Caramel',
+        price: 129,
+
+    },
+    {
+        id: 15,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853291_unhideClassicGlazedDonut.jpg',
+        title: 'Classic Glazed',
+        price: 89,
+    },
+    {
+        id: 16,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853325_unhideChocolatefrostedDonut.jpg',
+        title: 'Chocolate Frosted',
+        price: 89,
+
+    },
+    {
+        id: 17,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853360_unhideDeathbyChocolate.jpg',
+        title: 'Deathby Chocolate',
+        price: 109,
+    },
+    {
+        id: 18,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853384_unhideAlivebyChocolates.jpg',
+        title: 'Aliveby Chocolate',
+        price: 109,
+    },
+    {
+        id: 19,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853414_unhideBreakupPartyEclair.jpg',
+        title: 'BreakUp Party Eclair',
+        price: 109,
+    },{
+        id: 20,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675856594_unhideRainbowCrunch.jpg',
+        title: 'Rainbow Crunch',
+        price: 109, 
+    },
+    {
+        id: 21,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853548_unhideChocoOverdose.jpg',
+        title: 'Choco Overdose',
+        price: 109,
+    },
+    {
+        id: 22,
+        image: 'https://assets.limetray.com/assets/user_images/menus/compressed/1675853590_unhideRainbowPopDonut.jpg',
+        title: 'Rainbow pop',
+        price: 109,
+    },
+    {
+        id: 23,
+        image: 'https://cakexpo-images.s3.ap-south-1.amazonaws.com/wp-content/uploads/2021/12/14050921/IMG_20211117_202057_144.jpg',
+        title: 'Chocolate Truffle',
+        price: 499,
+    },
+    {
+        id: 24,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8X2n9dpHQt6RMr58jkQXWKiRWy-FJ3j5_g&usqp=CAU',
+        title: 'Black Forest',
+        price: 540,
+
+    },
+    {
+        id: 25,
+        image: 'https://cdn.shopify.com/s/files/1/0521/3929/4884/products/RedVelvetCake1.jpg?v=1632143747',
+        title: 'Red Velvet',
+        price: 890,
+    },
+    {
+        id: 26,
+        image: 'https://domesticgothess.com/wp-content/uploads/2020/02/vegan-carrot-layer-cake.jpg',
+        title: 'Carrot',
+        price: 435,
+
+    },
+    {
+        id: 27,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMq7nddSvuCoyme_BjGFXwr96MTSC_ALmuKg&usqp=CAU',
+        title: 'Strawberry',
+        price: 675,
+    },
+    {
+        id: 28,
+        image: 'https://tfcakes.in/images/products/210722_024926_480_364.jpg',
+        title: 'Mango Mousse',
+        price: 580,
+    },
+    {
+        id: 29,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS__tolrwtys5Mt_H7f5Gbw1tkYWySxJQnwNw&usqp=CAU',
+        title: 'Cookies and Cream',
+        price: 670,
+    },{
+        id: 30,
+        image: 'https://charlotteslivelykitchen.com/wp-content/uploads/2019/05/lemon-cake-2.jpg',
+        title: 'Lemon Blueberry',
+        price: 990, 
+    },
+    {
+        id: 31,
+        image: 'https://www.littlesweetbaker.com/wp-content/uploads/2018/04/coconut-cake-1.jpg',
+        title: 'Coconut Cream',
+        price: 259,
+    },
+    {
+        id: 32,
+        image: 'https://www.livewellbakeoften.com/wp-content/uploads/2019/05/Classic-Cheesecake-Recipe-25-500x500.jpg',
+        title: 'Marble Cheese',
+        price: 259,
+    },
+    {
+        id: 33,
+        image: 'https://cdn.shopify.com/s/files/1/0022/1393/7252/articles/20221223082901-cappuccino-recipe-blog_1024x1024.webp?v=1671784153',
+        title: 'Cappuccino',
+        price: 259,
+    },
+    {
+        id: 34,
+        image: 'https://www.cleaneatingkitchen.com/wp-content/uploads/2022/07/espresso-americano-over-ice-with-straw.jpg',
+        title: 'Americano',
+        price: 259,
+
+    },
+    {
+        id: 35,
+        image: 'https://static.toiimg.com/thumb/85918113.cms?width=1200&height=900',
+        title: 'Coffee',
+        price: 200,
+    },
+    {
+        id: 36,
+        image: 'https://natashaskitchen.com/wp-content/uploads/2020/11/Hot-Chocolate-Recipe-3.jpg',
+        title: 'Hot Chocolate',
+        price: 340,
+
+    },
+    {
+        id: 37,
+        image: 'https://globalassets.starbucks.com/assets/b635f407bbcd49e7b8dd9119ce33f76e.jpg',
+        title: 'Cold Coffee',
+        price: 349,
+    },
+    {
+        id: 38,
+        image: 'https://www.starbucks.co.th/stb-media/2020/08/93.White-Chocolate-Mocha-Frappuccino1080.png',
+        title: 'White-Chocolate-Mocha',
+        price: 270,
+    },
+    {
+        id: 39,
+        image: 'https://globalassets.starbucks.com/assets/e0cd6e8588b6431d9d6f702bde6ee41c.jpg?impolicy=1by1_tight_288',
+        title: 'Pink Coconut Drink',
+        price: 175,
+    },
+    {
+        id: 40,
+        image: 'https://globalassets.starbucks.com/assets/b5ee0554cdd64959a86530922cea7991.jpg?impolicy=1by1_tight_288',
+        title: 'Iced Coffee',
+        price: 349,
+    },
+    {
+        id: 41,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rVdPDDEDNkCyNyd5RLWlpPEp2WEhT4a9mA&usqp=CAU',
+        title: 'Iced Tea',
+        price: 270,
+    },
+    {
+        id: 42,
+        image: 'https://media.theeverygirl.com/wp-content/uploads/2021/11/starbucks-holiday-drinks-the-everygirl-4.png',
+        title: 'Chocolate Drink',
+        price: 185,
+    }
+    
+];
+const categories = [...new Set(product.map((item)=>{return item}))]
+   let i=0;
+document.getElementById('root').innerHTML=categories.map((item)=>
+{
+    var{image,title,price}=item;
+    return(
+        `<div class='gallery'>
+           <img src=${image}></img>
+        <div class='desc'>
+        <div class='title'>${title}
+        <p class='price'>Rs. ${price}.00</p></div>`+
+        "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
+        `</div>
+        </div>`
+
+    )
+
+}).join('')
+
+
+var cart =[];
+
+function addtocart(a){
+    cart.push({...categories[a]});
+    displaycart();
+}
+function delElement(a){
+    cart.splice(a, 1);
+    displaycart();
+}
+
+function displaycart(a){
+    let j=0,total=0;
+    document.getElementById("count").innerHTML=cart.length;
+    if(cart.length==0){
+        document.getElementById('cartitem').innerHTML = "Your cart is empty";
+        document.getElementById("total").innerHTML = "Rs. "+0+".00";
+        
+    }
+    else {
+        document.getElementById("cartitem").innerHTML = cart.map((items)=>
+        {
+            var{image, title, price} = items;
+            total=total+price;
+            return(
+                `<div class='cart-item'>
+                <div class='row-img'>
+                    <img class='rowimg' src=${image}>
+                </div>    
+                <p style='font-size:12px;'>${title}</p>
+                <h2 style='font-size:15px;'>Rs. ${price}.00</h2>`+
+                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
+            );
+        }).join('');
+        if (total > 0) {
+            document.getElementById("total").innerHTML = "Rs. "+total+".00";
+        } else {
+            document.getElementById("total").innerHTML = "";
+        }
+    }
+}
+
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+    
+    
+    
+
+      
+      
+</body>
+</html>

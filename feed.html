@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Rating and Comments</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    
+
+button{
+background-color:mistyrose;
+border-color: mistyrose;
+}
+.comment-box {
+      display: none;
+    }
+
+.ratewebsite{
+margin-left:500px;
+width:500px;
+margin-top:175px;
+background-color:rgba(255,255,255,0.8);
+padding:10px;
+}
+body{
+text-align:center;
+
+background-image:url("https://wallpaperaccess.com/full/2845467.jpg");
+background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 100%;
+
+}
+
+input[type=range] {
+  accent-color: rgb(249, 204, 199);
+  margin-bottom:30px;
+
+}
+
+    .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      text-align: center;
+    }
+    .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;
+    }
+    .rating > span:before {
+      content: "\2605";
+      position: absolute;
+    }
+    .comment-box {
+      display: none;
+    }
+
+    .ap {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:mistyrose;
+  color:black;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-style:solid;
+}
+
+.ap:hover {
+  background-color: mistyrose;
+}
+textarea{
+  width: 50%;
+            padding: 8px;
+            border: 1px solid black;
+}
+
+  </style>
+  <script>
+    function toggleCommentBox() {
+      var commentBox = document.getElementById("comment-box");
+      commentBox.style.display = commentBox.style.display === "none" ? "block" : "none";
+    }
+</script>
+</head>
+<body>
+  <form action="https://formsubmit.co./048e0d4d2fee9af5d847643cfce70365" method="post">
+<div class="ratewebsite">
+  <h1>Rate this website:</h1>
+
+  <div class="ratingsample">
+    <label for="rating">Rating&nbsp </label>
+<input type="range" id="rate" name="rate" min="0" max="50">
+  </div>
+
+  <h2>Comments:</h2>
+  <div class="form-group">
+    <textarea id="message" name="message" required></textarea><br><br>
+    <input type="submit" value="Submit" style="background-color:mistyrose ;">
+   </div><br>
+   <a class="ap" href="home.html">Back to Homepage</a>
+  </div>
+</form>
+ 
+</body>
+</html>

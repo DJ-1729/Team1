@@ -1,0 +1,40 @@
+nav{
+    text-align:right;
+  }
+  
+  body {
+    line-height: 1.5;
+    font-family: cursive;
+  
+  }
+  
+  header {
+    background-color: rgb(239, 137, 137);
+    padding: 20px;
+    border-bottom-style: solid;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  
+  
+  footer {
+    background-color: rgb(239, 137, 137);
+    padding: 10px;
+    text-align: center;
+  }

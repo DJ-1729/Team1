@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body{
+            background-color:#faffe6;
+            font-family: Bradley Hand ITC;
+            font-weight: bold;
+            font-size: 30px;
+            margin:0px;
+
+        }
+        header {
+  background-color: #feb8b8d0;
+  padding: 15px;
+  margin:0px auto;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav{
+  text-align:right;
+  font-size: 20px;
+}
+
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+.picture{
+    position: relative;
+  text-align: center;
+  color: white;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  font-size: 90px;
+  font-family: Vladimir Script ;
+  color:#000b0d;
+
+}
+
+
+        .container {
+            max-width: 500px;
+            margin-top: 60px;
+            background-color:rgb(248, 219, 228);
+            margin-left: 33%;
+            border-radius: 15px;
+
+        }
+        .containerhead{
+            background-color: #c6fcf7;
+            color: rgb(166, 94, 63);
+            text-align: center;
+            height: 25px;
+            margin-top: 0;
+            padding: 20px;
+            font-size: 25px;
+            border-radius: 15px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 20px;
+
+        }
+
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group textarea {
+            height: 120px;
+        }
+
+        .form-group input[type="submit"] {
+            padding: 10px 20px;
+            background-color: paleturquoise;
+            color:rgb(166, 94, 63);
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            margin-left: 385px;
+            font-family:Bradley Hand ITC ;
+            font-weight: bolder;
+            font-size: 15px;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #FF3A6D;
+        }
+
+       table{
+        width:475px;
+        padding: 10px;
+       }
+       td{
+        padding: 10px;
+       }
+
+       footer {
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info h3,
+.legal-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.legal-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legal-info li {
+    margin-bottom: 5px;
+}
+
+.legal-info a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.legal-info a:hover {
+    text-decoration: underline;
+}
+footer {
+  background-color:#feb8b8d0 ;
+  padding: 10px;
+  text-align: center;
+  font-family:Bradley Hand ITC;
+}
+        
+       
+    </style>
+ 
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+          <ul>
+            <li ><a href="home.html">Home</a></li>
+            <li ><a href="menu.html">Menu</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="prog.html">SignUp</a></li>
+            <li><a href="feed.html">Feedback</a></li>
+          </ul>
+        </nav>
+        </header>
+        <div class="picture">
+            <img src="https://img.freepik.com/premium-photo/pattern-colorful-donuts-background_798986-1027.jpg?w=2000">
+            <div class="centered">Contact Us</div>
+        </div>
+    <div class="container">
+        <div class="containerhead">
+            Feel free to contact us..
+        </div>
+        <form action="feed.html" method="POST" id="myForm">
+        <table>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="name" required>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="Last name" required>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <label for="phone_no">Phone Number</label>
+                        <input type="text" id="phone_number" name="number" required>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="2"><div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </td>
+            </tr>
+        </table>
+        
+           
+            
+           
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+     
+      <div class="footer-container">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/your_instagram">Instagram</a></p>
+          <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/your_facebook">Facebook</a></p>
+          <p><i class="far fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></p>
+          <p><i class="fas fa-phone"></i> Phone: +1234567890</p>
+        </div>
+        <div class="legal-info">
+          <h3>Legal Information</h3>
+          <ul>
+            
+              <li><a href="terms.html">Terms and Conditions</a></li>
+          
+          </ul>
+        </div>
+      </div>
+  
+  
+  <p>&copy; 2023 Doughy Delights. All rights reserved.</p>
+  </footer>
+  <script>
+    if (name && email && password) {
+                users[email] = { name, password };
+                alert("Sign up successful! You can now log in.");}
+  </script>
+</body>
+</html>
